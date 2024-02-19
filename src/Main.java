@@ -35,19 +35,18 @@ class Main {
                 arr.add("w");
             } else if (s.charAt(i + 1) == 'w') {
                 switch (s.charAt(i)) {
-                    case 'a':
+                    case 'a' -> {
                         sum += 1;
                         arr.add("aw");
                         i += 1;
-                        break;
-                    case 'o':
+                    }
+                    case 'o' -> {
                         sum += 1;
                         i += 1;
                         arr.add("ow");
-                        break;
-                    default:
-
-                        break;
+                    }
+                    default -> {
+                    }
                 }
             }
         }
